@@ -73,7 +73,7 @@ def main():
     try:
         with lock:
             # 拍照需要加锁
-            photo_path = take()
-        submit_photo(photo_path)
+            photo = take()
+        submit_photo(photo)
     except Exception as e:
-        log.logger.error(f"{photo_path}拍照上传时出现错误,{e}")
+        log.logger.error(f"{photo}拍照上传时出现错误,{e}")

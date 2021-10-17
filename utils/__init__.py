@@ -6,5 +6,5 @@ Date: 2021-10-10 03:22:43
 LastEditTime: 2021-10-17 09:59:11
 Description: 包包的入口
 """
-import config as current_config
+from config import current_config
 from ._log import log

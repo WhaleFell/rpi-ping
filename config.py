@@ -9,18 +9,37 @@ Description: 配置文件
 from pathlib import Path
 import os
 
-SUBMIT_URI = 'http://192.168.3.2:5000'  # 上传信息的接口结尾不带/
 
-BASEDIR = os.path.abspath(os.path.dirname(__file__))  # 项目目录
+class Config:
+    SUBMIT_URI = 'http://192.168.3.2:5000'  # 上传信息的接口结尾不带/
 
-Path.mkdir(Path(BASEDIR, 'photos'), exist_ok=True)  # 建立图片文件夹
-PHOTOS_DIR = Path(BASEDIR, 'photos')  # 图片目录
+    BASEDIR = os.path.abspath(os.path.dirname(__file__))  # 项目目录
 
-LOG_DIR = Path(BASEDIR, 'logs')  # 日志目录
-LOG_LEVEL = 'debug'  # 日志级别
+    Path.mkdir(Path(BASEDIR, 'photos'), exist_ok=True)  # 建立图片文件夹
+    PHOTOS_DIR = Path(BASEDIR, 'photos')  # 图片目录
 
-# API接口字典
-APIS = {
-    "temp": "/rpi/ping/",
-    "photo": "/rpi/upload_photo/"
+    LOG_DIR = Path(BASEDIR, 'logs')  # 日志目录
+    LOG_LEVEL = 'debug'  # 日志级别
+
+    # API接口字典
+    APIS = {
+        "temp": "/rpi/ping/",
+        "photo": "/rpi/upload_photo/"
+    }
+
+    # 每隔多长时间拍照和获取温度,默认2分钟上传温度;5分钟拍照
+    TEMP_TIME = 2
+    TAKE_PHOTO_TIME = 5
+
+
+class Test(Config):
+    TEMP_TIME = 0.1
+    TAKE_PHOTO_TIME = 0.1
+
+
+config = {
+    "default": Config,
+    "test": Test
 }
+
+current_config = config[os.environ.get('CONFIG') or 'default']
