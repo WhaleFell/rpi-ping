@@ -9,7 +9,7 @@ Description: 配置文件
 from pathlib import Path
 import os
 
-SUBMIT_URI = 'https://baidu.com'  # 上传信息的接口结尾不带/
+SUBMIT_URI = 'http://192.168.3.2:5000'  # 上传信息的接口结尾不带/
 
 BASEDIR = os.path.abspath(os.path.dirname(__file__))  # 项目目录
 

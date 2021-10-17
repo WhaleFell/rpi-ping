@@ -12,6 +12,9 @@ from pathlib import Path
 from .submit import submit_photo
 from . import current_config
 from . import log
+import threading
+
+lock = threading.Lock()
 
 
 def get_time(type: int):
@@ -68,7 +71,9 @@ def take() -> str:
 def main():
     """运行"""
     try:
-        photo_path = take()
+        with lock:
+            # 拍照需要加锁
+            photo_path = take()
         submit_photo(photo_path)
     except Exception as e:
         log.logger.error(f"{photo_path}拍照上传时出现错误,{e}")

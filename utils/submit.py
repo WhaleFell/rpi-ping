@@ -39,7 +39,7 @@ def submit_photo(photo_path: str) -> bool:
     with open(photo_path, "rb") as ph:
         body = {
             # 图片的名称、图片的绝对路径、图片的类型（就是后缀）
-            'image': (Path(photo_path).name, photo_path, "jpg")
+            'image': (Path(photo_path).name, ph, "jpg")
         }
         with httpx.Client() as resp:
             response = resp.post(url=url, files=body)
@@ -48,5 +48,5 @@ def submit_photo(photo_path: str) -> bool:
                 log.logger.error(f"上传图片接口响应异常!响应{response.text}")
                 return False
             else:
-                log.logger.info(f"温湿度接口响应信息:{response.json().get('msg')}")
+                log.logger.info(f"上传图片接口响应信息:{response.json().get('msg')}")
         return True
