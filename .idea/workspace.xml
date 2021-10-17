@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0aa8baa-15dd-4095-8d9f-e6c68ced6c6c" name="更改" comment=":sparkles: 完善获取温湿度和定时拍照模块,尝试利用`schedule` 定时模块运行.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/submit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/take_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/take_photo.py" afterDir="false" />
-    </list>
+    <list default="true" id="a0aa8baa-15dd-4095-8d9f-e6c68ced6c6c" name="更改" comment=":sparkles: 完善定时拍照,多线程加锁处理." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634437011857</updated>
       <workItem from="1634437016447" duration="6788000" />
-      <workItem from="1634455532149" duration="365000" />
+      <workItem from="1634455532149" duration="667000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles: 完善获取温湿度和定时拍照模块,尝试利用`schedule` 定时模块运行.">
       <created>1634443696693</created>
@@ -114,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634443696693</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":sparkles: 完善定时拍照,多线程加锁处理.">
+      <created>1634456023673</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634456023673</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +136,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value=":sparkles: 完善获取温湿度和定时拍照模块,尝试利用`schedule` 定时模块运行." />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 完善获取温湿度和定时拍照模块,尝试利用`schedule` 定时模块运行." />
+    <MESSAGE value=":sparkles: 完善定时拍照,多线程加锁处理." />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 完善定时拍照,多线程加锁处理." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Rpi_ping$main.coverage" NAME="main 覆盖结果" MODIFIED="1634455774402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
