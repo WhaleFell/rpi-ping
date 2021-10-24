@@ -1,0 +1,13 @@
+[Unit]
+Description=Python Task Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/rpi-ping/
+ExecStart=/usr/bin/python3 -m /home/pi/rpi-ping/main.py
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target
+Restart=always

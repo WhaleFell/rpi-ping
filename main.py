@@ -45,12 +45,11 @@ schedule.every(current_config.TEMP_TIME).minutes.do(run_threaded, get_temp_main)
 
 # 校园网登录任务
 from utils.jobs.job_login_fsszNetwork import main as login_fsszNetwork
-
 schedule.every(current_config.LOGIN_TIME).minutes.do(run_threaded, login_fsszNetwork)
 
 # FRPC服务器任务
 from utils.jobs.job_auto_frpc import main as auto_frpc
-schedule.every(current_config.LOGIN_TIME).minutes.do(run_threaded, auto_frpc)
+schedule.every(current_config.CHECK_FRPC).minutes.do(run_threaded, auto_frpc)
 
 # schedule.run_all()  # 运行所有任务,调试使用
 
