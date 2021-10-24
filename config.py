@@ -19,7 +19,7 @@ class Config:
     PHOTOS_DIR = Path(BASEDIR, 'photos')  # 图片目录
 
     LOG_DIR = Path(BASEDIR, 'logs')  # 日志目录
-    LOG_LEVEL = 'debug'  # 日志级别
+    LOG_LEVEL = 'info'  # 日志级别
 
     # API接口字典
     APIS = {
@@ -30,6 +30,7 @@ class Config:
     # 每隔多长时间拍照和获取温度,默认2分钟上传温度;5分钟拍照
     TEMP_TIME = 2
     TAKE_PHOTO_TIME = 5
+    LOGIN_TIME = 60  # 每一小时登录一次校园网.
 
 
 class Test(Config):

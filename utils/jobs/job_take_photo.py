@@ -6,13 +6,16 @@ Date: 2021-10-10 03:28:54
 LastEditTime: 2021-10-10 03:42:55
 Description: 利用opencv拍照文件
 """
+import traceback
+
 import cv2
 from datetime import datetime
 from pathlib import Path
-from .submit import submit_photo
-from . import current_config
-from . import log
+from utils.submit import submit_photo
+from utils import current_config
+from utils import log
 import threading
+from retrying import retry
 
 lock = threading.Lock()
 
@@ -48,10 +51,19 @@ def mk():
     )
 
 
+@retry(stop_max_attempt_number=3)
 def take() -> str:
-    """拍照函数,返回图片路径"""
+    """
+    拍照代码,遇到错误重试 3 次
+    :return: 拍摄的图片路径
+    :exception
+        在 `windows` 下可以正常拍照,但在树莓派就会错误.
+    """
     cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
     flag = cap.isOpened()
+
+    photo_path = str(mk())  # 生成文件名
+
     while flag:
         ret, frame = cap.read()  # 将这帧转换为灰度图
         font = cv2.FONT_HERSHEY_SIMPLEX  # 定义字体
@@ -60,7 +72,6 @@ def take() -> str:
         cv2.putText(frame, get_time(1), (50, 50), font,
                     1.2, (255, 255, 255), 2)
 
-        photo_path = str(mk())
         cv2.imwrite(filename=photo_path, img=frame)
         break
     log.logger.info(f"图片{photo_path}保存成功!")
@@ -69,11 +80,16 @@ def take() -> str:
 
 
 def main():
-    """运行"""
+    """
+    拍照主运行函数,处理拍照产生的异常
+    :return:
+    """
+    # 拍照需要加锁
     try:
         with lock:
-            # 拍照需要加锁
             photo = take()
+    except:
+        log.logger.error(f"拍照出现异常{traceback.format_exc()}")
+    else:
+        # 上传无需异常处理
         submit_photo(photo)
-    except Exception as e:
-        log.logger.error(f"{photo}拍照上传时出现错误,{e}")

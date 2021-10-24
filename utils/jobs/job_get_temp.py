@@ -8,9 +8,9 @@ Description: 利用DH传感器获取温湿度
 """
 import RPi.GPIO as GPIO
 import time
-from . import log
-from retry import retry
-from .submit import submit_ping
+from utils import log
+from retrying import retry
+from utils.submit import submit_ping
 
 
 def delayMicrosecond(t):  # 微秒级延时函数
@@ -102,7 +102,7 @@ def get_data():
     if check == check_tmp and temperature != 0 and temperature != 0:  # 判断数据是否正常
         # print("温度:", temperature,"C\n湿度:", humidity, "%")
         GPIO.cleanup()
-        log.logger.info(f"温度获取成功 temperature:{temperature} humidity:{humidity}")
+        log.logger.debug(f"温度获取成功 temperature:{temperature} humidity:{humidity}")
         return temperature, humidity
     else:
         print('数据校验失败')
@@ -110,7 +110,7 @@ def get_data():
         return False
 
 
-@retry(tries=30)
+@retry(stop_max_attempt_number=30)
 def main():
     """获取温湿度,最大尝试数:30次"""
     status = get_data()
@@ -118,8 +118,6 @@ def main():
 
     temperature, humidity = status
 
-    # 上传
-    try:
-        submit_ping(temperature, humidity)
-    except Exception as e:
-        log.logger.info(f"上传温湿度接口异常{e}")
+    # 上传,上传点已加异常处理.
+    submit_ping(temperature, humidity)
+
