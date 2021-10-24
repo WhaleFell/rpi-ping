@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0aa8baa-15dd-4095-8d9f-e6c68ced6c6c" name="更改" comment=":sparkles: 增加FRPC服务器自动获取配置.(未完善)">
-      <change afterPath="$PROJECT_DIR$/rpi.service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a0aa8baa-15dd-4095-8d9f-e6c68ced6c6c" name="更改" comment=":sparkles: 完善`systemclt` 守护文件" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,6 +180,7 @@
       <workItem from="1634455532149" duration="3481000" />
       <workItem from="1634984630552" duration="21413000" />
       <workItem from="1635064457038" duration="2500000" />
+      <workItem from="1635066990903" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles: 完善获取温湿度和定时拍照模块,尝试利用`schedule` 定时模块运行.">
       <created>1634443696693</created>
@@ -226,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635066586531</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=":sparkles: 完善`systemclt` 守护文件">
+      <created>1635067092142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635067092142</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +257,8 @@
     <MESSAGE value=":sparkles: 新增配置文件类型选择." />
     <MESSAGE value=":sparkles: 重构程序结构,壮大了异常处理机制,完善注释,增加校园网登录,采用了线程池的运行方式,可限制最多线程,避免卡死情况." />
     <MESSAGE value=":sparkles: 增加FRPC服务器自动获取配置.(未完善)" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 增加FRPC服务器自动获取配置.(未完善)" />
+    <MESSAGE value=":sparkles: 完善`systemclt` 守护文件" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 完善`systemclt` 守护文件" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Rpi_ping$scratch.coverage" NAME="scratch 覆盖结果" MODIFIED="1635037960275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
