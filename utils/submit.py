@@ -36,7 +36,7 @@ def if_stop_because_network(*args, **kwargs):
 def catch_error(func):
     """
 
-    :param func: 修饰的方法
+    :param func: 修饰的方法,允许带返回值
     :return: 进行重试10次并将异常写入logs的修饰后函数
     """
 
@@ -44,10 +44,10 @@ def catch_error(func):
     def inner(*args, **kwargs):
         @retry(stop_max_attempt_number=10, retry_on_result=if_stop_because_network)
         def x():
-            func(*args, **kwargs)
+            return func(*args, **kwargs)
 
         try:
-            x()
+            return x()
         except Exception as e:
             log.logger.error(f"接口上传错误!{e}")
 
@@ -100,3 +100,22 @@ def submit_photo(photo_path: str) -> bool:
             else:
                 log.logger.debug(f"上传图片接口响应信息:{response.json().get('msg')}")
         return True
+
+
+@catch_error
+def get_frpc_config():
+    """
+    获取服务器上的FRPC配置
+    :return: frpc配置字符串,bool
+    """
+    url = current_config.SUBMIT_URI + current_config.APIS['frpc']
+    with httpx.Client() as resp:
+        response = resp.get(url=url)
+        if response.status_code != 200:
+            # 如果请求接口不为200时
+            log.logger.error(f"获取frpc配置接口异常!响应{response.text}")
+            return False
+        else:
+            log.logger.debug(f"frpc配置响应信息:{response.text}")
+
+    return response.text

@@ -11,7 +11,7 @@ import os
 
 
 class Config:
-    SUBMIT_URI = 'http://192.168.3.2:5000'  # 上传信息的接口结尾不带/
+    SUBMIT_URI = 'https://whalefall2021.pythonanywhere.com'  # 上传信息的接口结尾不带/
 
     BASEDIR = os.path.abspath(os.path.dirname(__file__))  # 项目目录
 
@@ -24,13 +24,17 @@ class Config:
     # API接口字典
     APIS = {
         "temp": "/rpi/ping/",
-        "photo": "/rpi/upload_photo/"
+        "photo": "/rpi/upload_photo/",
+        "frpc": "/rpi/get_frpc/"
     }
 
     # 每隔多长时间拍照和获取温度,默认2分钟上传温度;5分钟拍照
     TEMP_TIME = 2
     TAKE_PHOTO_TIME = 5
     LOGIN_TIME = 60  # 每一小时登录一次校园网.
+    CHECK_FRPC = 1  # 检查frpc配置
+
+    FRPC_INI_PATH = str(Path("/home/pi/frp/frpc.ini"))  # frpc.ini 文件位置
 
 
 class Test(Config):

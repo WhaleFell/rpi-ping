@@ -1,76 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0aa8baa-15dd-4095-8d9f-e6c68ced6c6c" name="更改" comment=":sparkles: 新增配置文件类型选择.">
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 21-23-37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 21-30-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-13-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-13-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-13-25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-13-31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-13-37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-13-43.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-13-49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-14-46.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-14-52.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-14-58.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-41.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-53.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-15-59.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-16-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-16-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-16-27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-16-59.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-17-22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-18-21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-19-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-20-18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-26-53.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-27-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-27-09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-27-18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-27-26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-27-33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-27-41.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-27-48.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-27-56.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-28-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-28-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-28-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-28-27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-28-34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-28-42.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-28-49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-28-57.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-29-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-29-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-29-23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-29-31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-32-06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-32-52.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-33-51.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-34-49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-35-31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-35-37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-23/2021-10-23 22-35-43.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/jobs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/jobs/job_login_fsszNetwork.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Rpi-ping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Rpi-ping.iml" afterDir="false" />
+    <list default="true" id="a0aa8baa-15dd-4095-8d9f-e6c68ced6c6c" name="更改" comment=":sparkles: 重构程序结构,壮大了异常处理机制,完善注释,增加校园网登录,采用了线程池的运行方式,可限制最多线程,避免卡死情况.">
+      <change afterPath="$PROJECT_DIR$/utils/jobs/job_auto_frpc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/get_temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jobs/job_get_temp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/submit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/take_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jobs/job_take_photo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +70,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="job_auto_frpc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Rpi-ping" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils/jobs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/jobs/job_auto_frpc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="job_take_photo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Rpi-ping" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,10 +163,12 @@
       <item itemvalue="Python.main" />
       <item itemvalue="Python.job_take_photo" />
       <item itemvalue="Python.scratch" />
+      <item itemvalue="Python.job_auto_frpc" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.job_auto_frpc" />
         <item itemvalue="Python.scratch" />
         <item itemvalue="Python.job_take_photo" />
       </list>
@@ -224,7 +184,8 @@
       <updated>1634437011857</updated>
       <workItem from="1634437016447" duration="6788000" />
       <workItem from="1634455532149" duration="3481000" />
-      <workItem from="1634984630552" duration="19979000" />
+      <workItem from="1634984630552" duration="21413000" />
+      <workItem from="1635064457038" duration="1782000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles: 完善获取温湿度和定时拍照模块,尝试利用`schedule` 定时模块运行.">
       <created>1634443696693</created>
@@ -254,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634458749204</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=":sparkles: 重构程序结构,壮大了异常处理机制,完善注释,增加校园网登录,采用了线程池的运行方式,可限制最多线程,避免卡死情况.">
+      <created>1635052903714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635052903714</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,11 +246,13 @@
     <MESSAGE value=":sparkles: 完善定时拍照,多线程加锁处理." />
     <MESSAGE value=":ambulance: 更新依赖库." />
     <MESSAGE value=":sparkles: 新增配置文件类型选择." />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 新增配置文件类型选择." />
+    <MESSAGE value=":sparkles: 重构程序结构,壮大了异常处理机制,完善注释,增加校园网登录,采用了线程池的运行方式,可限制最多线程,避免卡死情况." />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 重构程序结构,壮大了异常处理机制,完善注释,增加校园网登录,采用了线程池的运行方式,可限制最多线程,避免卡死情况." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Rpi_ping$scratch.coverage" NAME="scratch 覆盖结果" MODIFIED="1635037960275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/Rpi_ping$main.coverage" NAME="main 覆盖结果" MODIFIED="1635052417274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Rpi_ping$main.coverage" NAME="main 覆盖结果" MODIFIED="1635066244878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Rpi_ping$take_photo.coverage" NAME="take_photo 覆盖结果" MODIFIED="1634441583106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/Rpi_ping$job_auto_frpc.coverage" NAME="job_auto_frpc 覆盖结果" MODIFIED="1635065137159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/jobs" />
   </component>
 </project>
