@@ -17,13 +17,13 @@ def check(result=None) -> bool:
         resp = requests.get(LoginNetwork.test_url, headers=LoginNetwork.header)
         if resp.status_code == 200 and resp.url == LoginNetwork.test_url:
             # 防止重定向影响判断
-            log.logger.info(f"百度访问成功!校园网状态:{result}")
+            # log.logger.info(f"百度访问成功!校园网状态:{result}")
             return False
     except Exception as e:
         if result is True:
-            log.logger.warning(f"百度外网访问错误{e} 但校园网似乎正常!")
+            log.logger.warning(f"百度外网访问错误{e}但校园网似乎正常!")
         else:
-            log.logger.warning(f"百度外网访问错误:{e} 而且登录校园网异常!")
+            log.logger.warning(f"百度外网访问错误:{e}而且登录校园网异常!")
         return True
 
 

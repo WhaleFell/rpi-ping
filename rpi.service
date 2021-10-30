@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/home/pi/rpi-ping/
-ExecStart=/usr/bin/python3 -m /home/pi/rpi-ping/main.py
+ExecStart=python3 /home/pi/rpi-ping/main.py
 StandardInput=tty-force
 
 [Install]

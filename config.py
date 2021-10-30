@@ -40,6 +40,10 @@ class Config:
 class Test(Config):
     TEMP_TIME = 0.1
     TAKE_PHOTO_TIME = 0.1
+    CHECK_FRPC = 0.1
+
+    LOG_LEVEL = 'debug'  # 日志级别
+    FRPC_INI_PATH = str(Path("frpc.ini"))  # frpc.ini 文件位置
 
 
 config = {
