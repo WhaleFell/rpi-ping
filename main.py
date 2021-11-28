@@ -11,14 +11,14 @@ import time
 
 import schedule
 import threading
-from utils import log
+from utils._log import log
 from config import current_config
 from concurrent.futures import ThreadPoolExecutor
 
 log.logger.info(f"开始运行!,当前配置{current_config}")
 
 # 新开线程池,限制线程上限
-pool = ThreadPoolExecutor(max_workers=30)
+pool = ThreadPoolExecutor(max_workers=current_config.THREADS)
 
 
 # def run_threaded(job_func):
@@ -34,24 +34,20 @@ def run_threaded(job_func):
 
 
 # 注册任务
+# from utils.jobs import job_get_temp
+# from utils.jobs import job_take_photo
+# from utils.jobs import job_login_fsszNetwork
+import utils.jobs.job_auto_frpc as job_auto_frpc
+import utils.jobs.job_login_fsszNetwork as job_login_fsszNetwork
 
-# TODO:拍照任务
-from utils.jobs.job_take_photo import main as take_photo_main
-schedule.every(current_config.TAKE_PHOTO_TIME).minutes.do(run_threaded, take_photo_main)
+# 任务列表 [任务函数,执行间隔时间(min)]
+TASKS = [
+    [job_auto_frpc, current_config.CHECK_FRPC],
+    [job_login_fsszNetwork, current_config.LOGIN_TIME]
+]
 
-# 获取温度任务
-# from utils.jobs.job_get_temp import main as get_temp_main
-# schedule.every(current_config.TEMP_TIME).minutes.do(run_threaded, get_temp_main)
-
-# 校园网登录任务
-from utils.jobs.job_login_fsszNetwork import main as login_fsszNetwork
-
-schedule.every(current_config.LOGIN_TIME).minutes.do(run_threaded, login_fsszNetwork)
-
-# FRPC服务器任务
-from utils.jobs.job_auto_frpc import main as auto_frpc
-
-schedule.every(current_config.CHECK_FRPC).minutes.do(run_threaded, auto_frpc)
+for task in TASKS:
+    schedule.every(task[1]).minutes.do(run_threaded, task[0].main)
 
 # schedule.run_all()  # 运行所有任务,调试使用
 if __name__ == "__main__":
@@ -60,5 +56,7 @@ if __name__ == "__main__":
             schedule.run_pending()
             time.sleep(1)
             # schedule.run_all()  # 运行所有任务,调试使用
+        except KeyboardInterrupt:
+            log.logger.critical("用户手动终止进程!")
         except:
             log.logger.critical(f"主运行出错!!{traceback.format_exc()}")

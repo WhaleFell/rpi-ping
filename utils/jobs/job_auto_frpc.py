@@ -21,5 +21,5 @@ def main():
         os.system('sudo systemctl restart frpc')
         log.logger.info("更新结束(⊙﹏⊙)~")
     else:
-        print("frpc当前无更新")
+        log.logger.info(f"frpc当前无更新")
         pass

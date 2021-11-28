@@ -9,6 +9,8 @@ Description: 配置文件
 from pathlib import Path
 import os
 
+import utils
+
 
 class Config:
     SUBMIT_URI = 'https://whalefall2021.pythonanywhere.com'  # 上传信息的接口结尾不带/
@@ -21,18 +23,22 @@ class Config:
     LOG_DIR = Path(BASEDIR, 'logs')  # 日志目录
     LOG_LEVEL = 'info'  # 日志级别
 
-    # API接口字典
-    APIS = {
-        "temp": "/rpi/ping/",
-        "photo": "/rpi/upload_photo/",
-        "frpc": "/rpi/get_frpc/"
-    }
+    IF_IN_FSSZ = True  # 是否在校园网内使用
 
     # 每隔多长时间拍照和获取温度,默认2分钟上传温度;5分钟拍照
     TEMP_TIME = 2
     TAKE_PHOTO_TIME = 5
     LOGIN_TIME = 60  # 每一小时登录一次校园网.
     CHECK_FRPC = 1  # 检查frpc配置
+
+    THREADS = 10  # 运行线程数
+
+    # API接口字典
+    APIS = {
+        "temp": "/rpi/ping/",
+        "photo": "/rpi/upload_photo/",
+        "frpc": "/rpi/get_frpc/"
+    }
 
     FRPC_INI_PATH = str(Path("/home/pi/frp/frpc.ini"))  # frpc.ini 文件位置
 

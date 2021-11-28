@@ -9,7 +9,7 @@ Description: 上传信息的所有函数,均用重试模块设置重试,
 --- !!有关网络的所有操作一定要在此处!! ---
 """
 import httpx
-from . import log
+from utils import log
 from . import current_config
 from retrying import retry
 from pathlib import Path
@@ -45,11 +45,13 @@ def catch_error(t):
         @retry(stop_max_attempt_number=10, retry_on_result=lambda *args, x=t: if_stop_because_network(f"({x})"))
         def inner(*args, **kwargs):
             """
-            不能在此函数抛出错误!
+            不能在此函数抛出错误! 理论上接口的错误全部被处理.
+            接口错误,网络正常时不会重试!
             """
             try:
                 return func(*args, **kwargs)
             except Exception as e:
+                # 其实可以在这里处理异常
                 log.logger.error(f"{t}接口错误!{e}")
 
         return inner

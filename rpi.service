@@ -4,10 +4,11 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/pi/rpi-ping/
-ExecStart=python3 /home/pi/rpi-ping/main.py
-StandardInput=tty-force
+WorkingDirectory=/root/rpi-ping/main.py
+ExecStart=/usr/bin/python3 /root/rpi-ping/main.py
+Restart=always
+RestartSec=2
+PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
-Restart=always

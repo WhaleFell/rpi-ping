@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0aa8baa-15dd-4095-8d9f-e6c68ced6c6c" name="更改" comment=":ambulance: 需求文件">
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-51-46.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-51-52.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-51-58.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-52-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-52-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-52-16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-54-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-54-07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-54-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-54-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-54-44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-54-50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-54-56.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-55-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-55-08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/2021-10-30/2021-10-30 17-55-14.jpg" afterDir="false" />
+    <list default="true" id="a0aa8baa-15dd-4095-8d9f-e6c68ced6c6c" name="更改" comment=":bug: 修复异常处理bug,完善更壮大的异常处理机制.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frpc.ini" beforeDir="false" afterPath="$PROJECT_DIR$/frpc.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpi.service" beforeDir="false" afterPath="$PROJECT_DIR$/rpi.service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jobs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jobs/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/jobs/job_auto_frpc.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jobs/job_auto_frpc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/jobs/job_login_fsszNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jobs/job_login_fsszNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/submit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +190,8 @@
       <workItem from="1634984630552" duration="21413000" />
       <workItem from="1635064457038" duration="2500000" />
       <workItem from="1635066990903" duration="2217000" />
-      <workItem from="1635584341827" duration="3640000" />
+      <workItem from="1635584341827" duration="4760000" />
+      <workItem from="1638070752160" duration="3229000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles: 完善获取温湿度和定时拍照模块,尝试利用`schedule` 定时模块运行.">
       <created>1634443696693</created>
@@ -264,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635067607287</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=":bug: 修复异常处理bug,完善更壮大的异常处理机制.">
+      <created>1635588363014</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635588363014</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,11 +284,12 @@
     <MESSAGE value=":sparkles: 增加FRPC服务器自动获取配置.(未完善)" />
     <MESSAGE value=":sparkles: 完善`systemclt` 守护文件" />
     <MESSAGE value=":ambulance: 需求文件" />
-    <option name="LAST_COMMIT_MESSAGE" value=":ambulance: 需求文件" />
+    <MESSAGE value=":bug: 修复异常处理bug,完善更壮大的异常处理机制." />
+    <option name="LAST_COMMIT_MESSAGE" value=":bug: 修复异常处理bug,完善更壮大的异常处理机制." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Rpi_ping$scratch.coverage" NAME="scratch 覆盖结果" MODIFIED="1635037960275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/Rpi_ping$main.coverage" NAME="main 覆盖结果" MODIFIED="1635587951449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Rpi_ping$main.coverage" NAME="main 覆盖结果" MODIFIED="1638073688137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Rpi_ping$take_photo.coverage" NAME="take_photo 覆盖结果" MODIFIED="1634441583106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/Rpi_ping$job_auto_frpc.coverage" NAME="job_auto_frpc 覆盖结果" MODIFIED="1635065137159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/jobs" />
   </component>
