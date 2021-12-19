@@ -40,7 +40,7 @@ class Config:
         "frpc": "/rpi/get_frpc/"
     }
 
-    FRPC_INI_PATH = str(Path("/home/pi/frp/frpc.ini"))  # frpc.ini 文件位置
+    FRPC_INI_PATH = str(Path("/root/frp/frpc.ini"))  # frpc.ini 文件位置
 
 
 class Test(Config):
